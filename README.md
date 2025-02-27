@@ -54,3 +54,8 @@ Follow these steps to install and run the application:
 ## Note
 
 I run on a M1 Mac so setup instructions may vary by machine.
+
+## Demo
+
+https://github.com/user-attachments/assets/4784be94-bdf5-40ca-8fa9-6f8c2c26a105
+
