@@ -28,39 +28,29 @@ Follow these steps to install and run the application:
     cd TOSScraper
     ```
 
-2. Run the setup script to install the dependencies and start the server:
+2. Launch Backend Server:
     ```sh
-    ./setup.sh
+    cd backend
+    python -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    python app.py
     ```
-
-### Launch Backend Server
-
-The `setup.sh` script installs the required Python packages and starts the Flask server.
-
-```sh
-#!/bin/bash
-
-cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python app.py
-```
-
-### Launch Frontend Web App
-
-```sh
-#!/bin/bash
-
-cd frontend
-npm install or npm i
-npm run start
-```
-
+3. Launch Frontend Web App:
+    ```sh
+    cd frontend
+    npm install or npm i
+    npm run start
+    ```
 
 ## Usage
 
-1. Open a web browser and go to `http://127.0.0.1:5000/`.
+1. Open a web browser and go to `http://localhost:3000/`.
 2. Enter the URL of an e-commerce website in the input field.
 3. Click "Find Terms of Service" to analyze the terms of service.
 4. The tool will display whether web scraping is mentioned in the terms of service, turn the result text red if it is mentioned, green if not, and show the relevant paragraphs.
+
+
+## Note
+
+I run on a M1 Mac so setup instructions may vary by machine.
